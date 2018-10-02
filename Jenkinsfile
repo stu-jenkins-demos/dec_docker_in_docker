@@ -17,6 +17,7 @@ pipeline {
       steps {
         container('maven') {
           sh 'mvn -version'
+          sh 'docker -version'
         }
       }
     }
